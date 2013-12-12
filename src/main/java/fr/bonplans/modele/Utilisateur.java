@@ -8,7 +8,9 @@ import fr.bonplans.modele.interfaces.IUtilisateur;
 
 public class Utilisateur implements IUtilisateur{
 
+	
 	private String pseudo;
+	private String role;
 	private String password;
 	private String nom;
 	private String prenom;
@@ -24,6 +26,14 @@ public class Utilisateur implements IUtilisateur{
 	}
 	public String getPassword() {
 		return password;
+	}
+	
+	
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
 	}
 	public void setPassword(String password) {
 		this.password = password;
